@@ -4,13 +4,13 @@ import "../styles/App.css";
 export default function App() {
     
     
-    const[theme,setTheme]=useState('light')
+    const[theme,setTheme]=useState("light")
     const func=()=>{
-        if(theme==='light'){
-           setTheme=('dark')
+        if(theme==="light"){
+           setTheme=("dark")
         }
         else{
-            setTheme('light')
+            setTheme("light")
         }
     }
     return (
