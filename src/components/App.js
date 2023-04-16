@@ -7,7 +7,7 @@ export default function App() {
     const[theme,setTheme]=useState("light")
     const func=()=>{
         if(theme==="light"){
-           setTheme=("dark")
+           setTheme("dark")
         }
         else{
             setTheme("light")
