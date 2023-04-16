@@ -14,7 +14,7 @@ export default function App() {
         }
     }
     return (
-        <div className="App">
+        <div className="App" id={theme==="light"?"light":"dark"}>
             <h1>Newton School</h1>
             <div>
                 <form>
@@ -26,7 +26,7 @@ export default function App() {
                 </form>
             </div>
             <label> {theme === "light" ? "Light Mode" : "Dark Mode"}</label>
-            <input type="checkbox" id="switch" />
+            <input type="checkbox" id="switch" onChange={func}/>
             <label for="switch" className="label">
                 Toggle
             </label>
